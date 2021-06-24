@@ -2,7 +2,7 @@ Pod::Spec.new do |spec|
 
   spec.name         = 'FF_APM'
 
-  spec.version      = '0.0.1'
+  spec.version      = '0.0.2'
 
   spec.summary      = 'APM模块'
 
