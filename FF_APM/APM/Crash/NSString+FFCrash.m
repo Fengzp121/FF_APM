@@ -8,6 +8,7 @@
 
 #import "NSString+FFCrash.h"
 #import "FFCrashTool.h"
+#import "FFCrashHandler.h"
 @implementation NSString (FFCrash)
 
 +(void)load{

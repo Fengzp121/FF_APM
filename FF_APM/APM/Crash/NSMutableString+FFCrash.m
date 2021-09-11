@@ -8,6 +8,7 @@
 
 #import "NSMutableString+FFCrash.h"
 #import "FFCrashTool.h"
+#import "FFCrashHandler.h"
 @implementation NSMutableString (FFCrash)
 +(void)load{
     static dispatch_once_t onceToken;

@@ -8,7 +8,7 @@
 
 #import "NSDictionary+FFCrash.h"
 #import "FFCrashTool.h"
-
+#import "FFCrashHandler.h"
 @implementation NSDictionary (FFCrash)
 +(void)load{
     static dispatch_once_t onceToken;

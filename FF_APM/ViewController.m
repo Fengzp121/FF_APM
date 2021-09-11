@@ -6,6 +6,7 @@
 //
 
 #import "ViewController.h"
+#import "AAViewController.h"
 #import "FFCrashHandler.h"
 @interface ViewController ()<FFCrashHandlerDelegate>
 @property(nonatomic, strong)UITextView *textView;
@@ -24,8 +25,8 @@
     self.navigationController.title = @"iOS Crash防护😄";
     self.view.backgroundColor = UIColor.whiteColor;
     
-    NSArray *methods = @[@"testArray",@"testMArray,testDictionary"];
-    NSArray *titles  = @[@"数组越界",@"可变数组越界,字典"];
+    NSArray *methods = @[@"testArray",@"testMArray",@"testDictionary"];
+    NSArray *titles  = @[@"数组越界",@"可变数组越界",@"字典"];
     CGSize size = CGSizeMake(self.view.frame.size.width/4.0, 65);
     int i = 0;
     for(NSString *title in titles){
@@ -61,18 +62,21 @@
 
 #pragma mark - 测试方法
 -(void)testArray{
+    UINavigationController *vc = [[UINavigationController alloc] initWithRootViewController:[AAViewController new]];
+    vc.modalPresentationStyle = 0;
+    [self presentViewController:vc animated:YES completion:nil];
     //越界
-    NSArray *array = @[@"且行且珍惜"];
-    id elem1 = array[3];
-    id elem2 = [array objectAtIndex:2];
-    //nil值
-    NSString *nilStr = nil;
-    NSArray *array1 = @[nilStr];
-    NSString *strings[2];
-    strings[0] = @"wsl";
-    strings[1] = nilStr;
-    NSArray *array2 = [NSArray arrayWithObjects:strings count:2];
-    NSArray *array3 = [NSArray arrayWithObject:nil];
+//    NSArray *array = @[@"且行且珍惜"];
+//    id elem1 = array[3];
+//    id elem2 = [array objectAtIndex:2];
+//    //nil值
+//    NSString *nilStr = nil;
+//    NSArray *array1 = @[nilStr];
+//    NSString *strings[2];
+//    strings[0] = @"wsl";
+//    strings[1] = nilStr;
+//    NSArray *array2 = [NSArray arrayWithObjects:strings count:2];
+//    NSArray *array3 = [NSArray arrayWithObject:nil];
 }
 
 -(void)testMArray{

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		464FD89126EB798D00145EB1 /* UIViewController+FF_Track.m in Sources */ = {isa = PBXBuildFile; fileRef = 464FD89026EB798D00145EB1 /* UIViewController+FF_Track.m */; };
+		464FD89626EB7D2200145EB1 /* AAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 464FD89526EB7D2200145EB1 /* AAViewController.m */; };
+		464FD89A26EB813800145EB1 /* UIButton+FF_Track.m in Sources */ = {isa = PBXBuildFile; fileRef = 464FD89926EB813800145EB1 /* UIButton+FF_Track.m */; };
 		469092082684E2B000ECA757 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 469092072684E2B000ECA757 /* AppDelegate.m */; };
 		4690920B2684E2B000ECA757 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4690920A2684E2B000ECA757 /* SceneDelegate.m */; };
 		4690920E2684E2B000ECA757 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4690920D2684E2B000ECA757 /* ViewController.m */; };
@@ -25,6 +28,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		464FD88F26EB798D00145EB1 /* UIViewController+FF_Track.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+FF_Track.h"; sourceTree = "<group>"; };
+		464FD89026EB798D00145EB1 /* UIViewController+FF_Track.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+FF_Track.m"; sourceTree = "<group>"; };
+		464FD89426EB7D2200145EB1 /* AAViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AAViewController.h; sourceTree = "<group>"; };
+		464FD89526EB7D2200145EB1 /* AAViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AAViewController.m; sourceTree = "<group>"; };
+		464FD89826EB813800145EB1 /* UIButton+FF_Track.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+FF_Track.h"; sourceTree = "<group>"; };
+		464FD89926EB813800145EB1 /* UIButton+FF_Track.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+FF_Track.m"; sourceTree = "<group>"; };
 		469092032684E2B000ECA757 /* FF_APM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FF_APM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		469092062684E2B000ECA757 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		469092072684E2B000ECA757 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -67,6 +76,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		464FD88726EB588700145EB1 /* Track */ = {
+			isa = PBXGroup;
+			children = (
+				464FD88F26EB798D00145EB1 /* UIViewController+FF_Track.h */,
+				464FD89026EB798D00145EB1 /* UIViewController+FF_Track.m */,
+				464FD89826EB813800145EB1 /* UIButton+FF_Track.h */,
+				464FD89926EB813800145EB1 /* UIButton+FF_Track.m */,
+			);
+			path = Track;
+			sourceTree = "<group>";
+		};
 		469091FA2684E2B000ECA757 = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +113,8 @@
 				4690920A2684E2B000ECA757 /* SceneDelegate.m */,
 				4690920C2684E2B000ECA757 /* ViewController.h */,
 				4690920D2684E2B000ECA757 /* ViewController.m */,
+				464FD89426EB7D2200145EB1 /* AAViewController.h */,
+				464FD89526EB7D2200145EB1 /* AAViewController.m */,
 				4690920F2684E2B000ECA757 /* Main.storyboard */,
 				469092122684E2B800ECA757 /* Assets.xcassets */,
 				469092142684E2B800ECA757 /* LaunchScreen.storyboard */,
@@ -105,6 +127,8 @@
 		469092212684E32100ECA757 /* APM */ = {
 			isa = PBXGroup;
 			children = (
+				469092322684E32100ECA757 /* FFCrashTool.h */,
+				464FD88726EB588700145EB1 /* Track */,
 				4690923E2684E3F200ECA757 /* BSBacktraceLogger */,
 				469092232684E32100ECA757 /* Crash */,
 			);
@@ -114,7 +138,6 @@
 		469092232684E32100ECA757 /* Crash */ = {
 			isa = PBXGroup;
 			children = (
-				469092322684E32100ECA757 /* FFCrashTool.h */,
 				469092272684E32100ECA757 /* FFCrashHandler.h */,
 				4690922E2684E32100ECA757 /* FFCrashHandler.m */,
 				469092302684E32100ECA757 /* NSArray+FFCrash.h */,
@@ -214,12 +237,15 @@
 				469092382684E32100ECA757 /* FFCrashHandler.m in Sources */,
 				4690920E2684E2B000ECA757 /* ViewController.m in Sources */,
 				469092392684E32100ECA757 /* NSDictionary+FFCrash.m in Sources */,
+				464FD89A26EB813800145EB1 /* UIButton+FF_Track.m in Sources */,
 				469092412684E3F200ECA757 /* BSBacktraceLogger.m in Sources */,
 				469092082684E2B000ECA757 /* AppDelegate.m in Sources */,
 				469092192684E2B800ECA757 /* main.m in Sources */,
+				464FD89126EB798D00145EB1 /* UIViewController+FF_Track.m in Sources */,
 				469092342684E32100ECA757 /* NSMutableDictionary+FFCrash.m in Sources */,
 				4690920B2684E2B000ECA757 /* SceneDelegate.m in Sources */,
 				469092372684E32100ECA757 /* NSMutableArray+FFCrash.m in Sources */,
+				464FD89626EB7D2200145EB1 /* AAViewController.m in Sources */,
 				469092352684E32100ECA757 /* NSString+FFCrash.m in Sources */,
 				4690923A2684E32100ECA757 /* NSMutableString+FFCrash.m in Sources */,
 				469092362684E32100ECA757 /* NSArray+FFCrash.m in Sources */,

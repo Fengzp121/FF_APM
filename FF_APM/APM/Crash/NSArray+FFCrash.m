@@ -8,7 +8,7 @@
 
 #import "NSArray+FFCrash.h"
 #import "FFCrashTool.h"
-
+#import "FFCrashHandler.h"
 @implementation NSArray (FFCrash)
 +(void)load{
     static dispatch_once_t onceToken;

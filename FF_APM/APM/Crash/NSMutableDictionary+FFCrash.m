@@ -8,6 +8,7 @@
 
 #import "NSMutableDictionary+FFCrash.h"
 #import "FFCrashTool.h"
+#import "FFCrashHandler.h"
 @implementation NSMutableDictionary (FFCrash)
 
 +(void)load{
