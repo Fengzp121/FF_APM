@@ -19,6 +19,7 @@
     [super viewDidLoad];
     [self setUI];
     [FFCrashHandler defaultCrashHandler].delegate = self;
+    //测试
 }
 
 - (void)setUI{
