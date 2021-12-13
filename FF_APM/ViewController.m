@@ -14,7 +14,7 @@
 @end
 
 @implementation ViewController
-
+//1
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setUI];
